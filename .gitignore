@@ -1,13 +1,26 @@
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
 
 # Virtual environments
 venv/
+.venv/
 env/
 
-# Model files
-*.pkl
-
-# Firebase credentials
+# Firebase credentials — NEVER COMMIT
 firebase_config.json
+*.env
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+
+# NOTE: models/queue_model.pkl IS committed so Render can load it on deploy.
+# Do not add *.pkl to this gitignore.
